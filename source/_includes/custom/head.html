@@ -1,0 +1,22 @@
+{% if page.styles contains 'mathjax' %}
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+{% endif %}
+
+{% if page.styles contains 'table' %}
+<link href="{{ root_url }}/stylesheets/table.css" media="screen, projection" rel="stylesheet" type="text/css">
+{% endif %}
+<link href="{{ root_url }}/stylesheets/link-color-transition.css" media="screen, projection" rel="stylesheet" type="text/css">

@@ -1,0 +1,13 @@
+{% capture category %}{% if post %}{{ post.categories | category_links | size }}{% else %}{{ page.categories | category_links | size }}{% endif %}{% endcapture %}
+{% unless category == '0' %}
+<span>
+  标签：
+  <span class="categories">
+    {% if post %}
+      {{ post.categories | category_links }}
+    {% else %}
+      {{ page.categories | category_links }}
+    {% endif %}
+  </span>
+</span>
+{% endunless %}

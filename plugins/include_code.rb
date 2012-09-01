@@ -1,3 +1,5 @@
+#encoding:utf-8
+
 # Title: Include Code Tag for Jekyll
 # Author: Brandon Mathis http://brandonmathis.com
 # Description: Import files on your filesystem into any blog post as embedded code snippets with syntax highlighting and a download link.
@@ -61,7 +63,7 @@ module Jekyll
         @filetype = file.extname.sub('.','') if @filetype.nil?
         title = @title ? "#{@title} (#{file.basename})" : file.basename
         url = "/#{code_dir}/#{@file}"
-        source = "<figure class='code'><figcaption><span>#{title}</span> <a href='#{url}'>download</a></figcaption>\n"
+        source = "<figure class='code'><figcaption><span>#{title}</span> <a href='#{url}'>下载</a></figcaption>\n"
         source += " #{highlight(code, @filetype)}</figure>"
         safe_wrap(source)
       end
