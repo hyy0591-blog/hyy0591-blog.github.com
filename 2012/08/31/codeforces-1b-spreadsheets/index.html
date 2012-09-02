@@ -195,11 +195,275 @@ MathJax.Hub.Config({
 
 <h3 id="c">程序（C++）</h3>
 
-<p>File d:/hyy0591-blog.github.com/source/downloads/code/cf_1B.cpp could not be found</p>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (cf_1B.cpp)</span> <a href="/downloads/code/cf_1B.cpp">下载</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+<span class="line-number">37</span>
+<span class="line-number">38</span>
+<span class="line-number">39</span>
+<span class="line-number">40</span>
+<span class="line-number">41</span>
+<span class="line-number">42</span>
+<span class="line-number">43</span>
+<span class="line-number">44</span>
+<span class="line-number">45</span>
+<span class="line-number">46</span>
+<span class="line-number">47</span>
+<span class="line-number">48</span>
+<span class="line-number">49</span>
+<span class="line-number">50</span>
+<span class="line-number">51</span>
+<span class="line-number">52</span>
+<span class="line-number">53</span>
+<span class="line-number">54</span>
+<span class="line-number">55</span>
+<span class="line-number">56</span>
+<span class="line-number">57</span>
+<span class="line-number">58</span>
+<span class="line-number">59</span>
+<span class="line-number">60</span>
+</pre></td><td class="code"><pre><code class="cpp"><span class="line"><span class="cp">#include &lt;iostream&gt;</span>
+</span><span class="line"><span class="cp">#include &lt;cstdio&gt;</span>
+</span><span class="line"><span class="cp">#include &lt;cmath&gt;</span>
+</span><span class="line"><span class="cp">#include &lt;string&gt;</span>
+</span><span class="line"><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span><span class="line">
+</span><span class="line"><span class="kt">int</span> <span class="n">main</span><span class="p">()</span>
+</span><span class="line"><span class="p">{</span>
+</span><span class="line">    <span class="kt">long</span> <span class="n">n</span><span class="p">;</span>
+</span><span class="line">    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+</span><span class="line">    <span class="k">for</span><span class="p">(</span><span class="kt">long</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span><span class="line">    <span class="p">{</span>
+</span><span class="line">        <span class="n">string</span> <span class="n">s</span><span class="p">,</span> <span class="n">ans</span><span class="p">;</span>
+</span><span class="line">        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">s</span><span class="p">;</span>
+</span><span class="line">        <span class="k">if</span> <span class="p">((</span><span class="n">s</span><span class="p">[</span> <span class="mi">0</span> <span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;R&#39;</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span> <span class="mi">1</span> <span class="p">]</span> <span class="o">&gt;=</span> <span class="sc">&#39;0&#39;</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span> <span class="mi">1</span> <span class="p">]</span> <span class="o">&lt;=</span> <span class="sc">&#39;9&#39;</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="sc">&#39;C&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="n">string</span><span class="o">::</span><span class="n">npos</span><span class="p">))</span>
+</span><span class="line">        <span class="p">{</span>
+</span><span class="line">            <span class="kt">long</span> <span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">;</span>
+</span><span class="line">            <span class="n">sscanf</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="s">&quot;R%ldC%ld&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">r</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">c</span><span class="p">);</span>
+</span><span class="line">            <span class="k">while</span> <span class="p">(</span><span class="n">c</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
+</span><span class="line">                <span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span><span class="line">                <span class="p">{</span>
+</span><span class="line">                    <span class="n">ans</span> <span class="o">=</span> <span class="sc">&#39;Z&#39;</span> <span class="o">+</span> <span class="n">ans</span><span class="p">;</span>
+</span><span class="line">                    <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">/</span> <span class="mi">26</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class="line">                    <span class="k">continue</span><span class="p">;</span>
+</span><span class="line">                <span class="p">}</span>
+</span><span class="line">                <span class="k">else</span>
+</span><span class="line">                <span class="p">{</span>
+</span><span class="line">                    <span class="n">ans</span> <span class="o">=</span> <span class="k">static_cast</span> <span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="p">(</span><span class="mi">64</span> <span class="o">+</span> <span class="n">c</span> <span class="o">%</span> <span class="mi">26</span><span class="p">)</span> <span class="o">+</span> <span class="n">ans</span><span class="p">;</span>
+</span><span class="line">                    <span class="n">c</span> <span class="o">/=</span> <span class="mi">26</span><span class="p">;</span>
+</span><span class="line">                <span class="p">}</span>
+</span><span class="line">            <span class="n">ans</span> <span class="o">=</span> <span class="n">ans</span> <span class="o">+</span> <span class="n">s</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="sc">&#39;C&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</span><span class="line">        <span class="p">}</span>
+</span><span class="line">        <span class="k">else</span>
+</span><span class="line">        <span class="p">{</span>
+</span><span class="line">            <span class="kt">long</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class="line">            <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="p">((</span><span class="n">s</span><span class="p">[</span> <span class="n">j</span> <span class="p">]</span> <span class="o">&gt;=</span> <span class="sc">&#39;0&#39;</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span> <span class="n">j</span> <span class="p">]</span> <span class="o">&lt;=</span> <span class="sc">&#39;9&#39;</span><span class="p">)))</span>
+</span><span class="line">                <span class="n">j</span><span class="o">++</span><span class="p">;</span>
+</span><span class="line">            <span class="n">string</span> <span class="n">ts</span> <span class="o">=</span> <span class="n">s</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>
+</span><span class="line">            <span class="n">s</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>
+</span><span class="line">            <span class="kt">long</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class="line">            <span class="n">ans</span> <span class="o">=</span> <span class="sc">&#39;R&#39;</span> <span class="o">+</span> <span class="n">s</span> <span class="o">+</span> <span class="sc">&#39;C&#39;</span><span class="p">;</span>
+</span><span class="line">            <span class="k">for</span><span class="p">(</span><span class="kt">long</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">ts</span><span class="p">.</span><span class="n">length</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
+</span><span class="line">            <span class="p">{</span>
+</span><span class="line">                <span class="kt">long</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class="line">                <span class="k">for</span><span class="p">(</span><span class="kt">long</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">ts</span><span class="p">.</span><span class="n">length</span><span class="p">()</span> <span class="o">-</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span>
+</span><span class="line">                    <span class="n">t</span> <span class="o">*=</span> <span class="mi">26</span><span class="p">;</span>
+</span><span class="line">                <span class="n">c</span> <span class="o">+=</span> <span class="p">(</span><span class="n">ts</span><span class="p">[</span> <span class="n">j</span> <span class="p">]</span> <span class="o">-</span> <span class="mi">64</span><span class="p">)</span> <span class="o">*</span> <span class="n">t</span><span class="p">;</span>
+</span><span class="line">		    <span class="p">}</span>
+</span><span class="line">            <span class="n">ts</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+</span><span class="line">            <span class="k">while</span> <span class="p">(</span><span class="n">c</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
+</span><span class="line">            <span class="p">{</span>
+</span><span class="line">				<span class="n">ts</span> <span class="o">=</span> <span class="k">static_cast</span> <span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span> <span class="p">(</span><span class="sc">&#39;0&#39;</span> <span class="o">+</span> <span class="n">c</span> <span class="o">%</span> <span class="mi">10</span><span class="p">)</span> <span class="o">+</span> <span class="n">ts</span><span class="p">;</span>
+</span><span class="line">				<span class="n">c</span> <span class="o">/=</span> <span class="mi">10</span><span class="p">;</span>
+</span><span class="line">			<span class="p">}</span>
+</span><span class="line">			<span class="n">ans</span> <span class="o">+=</span> <span class="n">ts</span><span class="p">;</span>
+</span><span class="line">        <span class="p">}</span>
+</span><span class="line">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">ans</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</span><span class="line">    <span class="p">}</span>
+</span><span class="line">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <h3 id="pascal">程序（Pascal）</h3>
 
-<p>File d:/hyy0591-blog.github.com/source/downloads/code/cf_1B.pas could not be found</p>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (cf_1B.pas)</span> <a href="/downloads/code/cf_1B.pas">下载</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+<span class="line-number">37</span>
+<span class="line-number">38</span>
+<span class="line-number">39</span>
+<span class="line-number">40</span>
+<span class="line-number">41</span>
+<span class="line-number">42</span>
+<span class="line-number">43</span>
+<span class="line-number">44</span>
+<span class="line-number">45</span>
+<span class="line-number">46</span>
+<span class="line-number">47</span>
+<span class="line-number">48</span>
+<span class="line-number">49</span>
+<span class="line-number">50</span>
+<span class="line-number">51</span>
+<span class="line-number">52</span>
+<span class="line-number">53</span>
+<span class="line-number">54</span>
+<span class="line-number">55</span>
+<span class="line-number">56</span>
+<span class="line-number">57</span>
+<span class="line-number">58</span>
+<span class="line-number">59</span>
+<span class="line-number">60</span>
+<span class="line-number">61</span>
+<span class="line-number">62</span>
+<span class="line-number">63</span>
+<span class="line-number">64</span>
+<span class="line-number">65</span>
+<span class="line-number">66</span>
+<span class="line-number">67</span>
+<span class="line-number">68</span>
+<span class="line-number">69</span>
+<span class="line-number">70</span>
+<span class="line-number">71</span>
+</pre></td><td class="code"><pre><code class="pas"><span class="line"><span class="k">program</span> <span class="n">cf_1B</span><span class="o">;</span>
+</span><span class="line"><span class="k">uses</span> <span class="n">math</span><span class="o">;</span>
+</span><span class="line"><span class="k">var</span> <span class="n">n</span> <span class="o">:</span> <span class="kt">longint</span><span class="o">;</span>
+</span><span class="line">    <span class="n">a</span><span class="o">,</span> <span class="n">ans</span> <span class="o">:</span> <span class="k">array</span> <span class="p">[</span> <span class="mi">1</span> <span class="o">..</span> <span class="mi">100000</span> <span class="p">]</span> <span class="k">of</span> <span class="kt">ansistring</span><span class="o">;</span>
+</span><span class="line">
+</span><span class="line"><span class="k">procedure</span> <span class="nf">init</span><span class="o">;</span>
+</span><span class="line"><span class="k">var</span> <span class="n">i</span> <span class="o">:</span> <span class="kt">longint</span><span class="o">;</span>
+</span><span class="line"><span class="k">begin</span>
+</span><span class="line">    <span class="nb">readln</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line">    <span class="k">for</span> <span class="n">i</span> <span class="o">:=</span> <span class="mi">1</span> <span class="k">to</span> <span class="n">n</span> <span class="k">do</span>
+</span><span class="line">        <span class="nb">readln</span><span class="p">(</span><span class="n">a</span><span class="p">[</span> <span class="n">i</span> <span class="p">])</span><span class="o">;</span>
+</span><span class="line"><span class="k">end</span><span class="o">;</span>
+</span><span class="line">
+</span><span class="line"><span class="k">procedure</span> <span class="nf">main</span><span class="o">;</span>
+</span><span class="line"><span class="k">var</span> <span class="n">i</span><span class="o">,</span> <span class="n">j</span> <span class="o">:</span> <span class="kt">longint</span><span class="o">;</span>
+</span><span class="line">    <span class="n">r</span><span class="o">,</span> <span class="n">c</span><span class="o">,</span> <span class="n">t</span> <span class="o">:</span> <span class="kt">int64</span><span class="o">;</span>
+</span><span class="line">    <span class="n">ts</span> <span class="o">:</span> <span class="kt">ansistring</span><span class="o">;</span>
+</span><span class="line"><span class="k">begin</span>
+</span><span class="line">    <span class="k">for</span> <span class="n">i</span> <span class="o">:=</span> <span class="mi">1</span> <span class="k">to</span> <span class="n">n</span> <span class="k">do</span>
+</span><span class="line">    <span class="k">begin</span>
+</span><span class="line">        <span class="k">if</span> <span class="p">((</span><span class="n">a</span><span class="p">[</span> <span class="n">i</span><span class="o">,</span> <span class="mi">1</span> <span class="p">]</span> <span class="o">=</span> <span class="s">&#39;R&#39;</span><span class="p">)</span> <span class="k">and</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span> <span class="n">i</span><span class="o">,</span> <span class="mi">2</span> <span class="p">]</span> <span class="k">in</span> <span class="p">[</span> <span class="s">&#39;0&#39;</span> <span class="o">..</span> <span class="s">&#39;9&#39;</span> <span class="p">])</span> <span class="k">and</span> <span class="p">(</span><span class="nb">pos</span><span class="p">(</span><span class="s">&#39;C&#39;</span><span class="o">,</span> <span class="n">a</span><span class="p">[</span> <span class="n">i</span> <span class="p">])</span> <span class="o">&lt;&gt;</span> <span class="mi">0</span><span class="p">))</span> <span class="k">then</span>
+</span><span class="line">        <span class="k">begin</span>
+</span><span class="line">            <span class="nb">delete</span><span class="p">(</span><span class="n">a</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line">            <span class="n">ts</span> <span class="o">:=</span> <span class="nb">copy</span><span class="p">(</span><span class="n">a</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="nb">pos</span><span class="p">(</span><span class="s">&#39;C&#39;</span><span class="o">,</span> <span class="n">a</span><span class="p">[</span> <span class="n">i</span> <span class="p">])</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line">            <span class="nb">delete</span><span class="p">(</span><span class="n">a</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="nb">pos</span><span class="p">(</span><span class="s">&#39;C&#39;</span><span class="o">,</span> <span class="n">a</span><span class="p">[</span> <span class="n">i</span> <span class="p">]))</span><span class="o">;</span>
+</span><span class="line">            <span class="nb">val</span><span class="p">(</span><span class="n">a</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span><span class="o">,</span> <span class="n">c</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line">            <span class="n">ans</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">:=</span> <span class="s">&#39;&#39;</span><span class="o">;</span>
+</span><span class="line">            <span class="k">while</span> <span class="p">(</span><span class="n">c</span> <span class="o">&lt;&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="k">do</span>
+</span><span class="line">            <span class="k">begin</span>
+</span><span class="line">                <span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="k">mod</span> <span class="mi">26</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
+</span><span class="line">                <span class="k">begin</span>
+</span><span class="line">                    <span class="n">ans</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">:=</span> <span class="s">&#39;Z&#39;</span> <span class="o">+</span> <span class="n">ans</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span><span class="o">;</span>
+</span><span class="line">                    <span class="n">c</span> <span class="o">:=</span> <span class="n">c</span> <span class="k">div</span> <span class="mi">26</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class="line">                    <span class="k">continue</span><span class="o">;</span>
+</span><span class="line">                <span class="k">end</span>
+</span><span class="line">                <span class="k">else</span>
+</span><span class="line">                    <span class="n">ans</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">:=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">64</span> <span class="o">+</span> <span class="n">c</span> <span class="k">mod</span> <span class="mi">26</span><span class="p">)</span> <span class="o">+</span> <span class="n">ans</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span><span class="o">;</span>
+</span><span class="line">                <span class="n">c</span> <span class="o">:=</span> <span class="n">c</span> <span class="k">div</span> <span class="mi">26</span><span class="o">;</span>
+</span><span class="line">            <span class="k">end</span><span class="o">;</span>
+</span><span class="line">            <span class="n">ans</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">:=</span> <span class="n">ans</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">+</span> <span class="n">ts</span><span class="o">;</span>
+</span><span class="line">        <span class="k">end</span>
+</span><span class="line">        <span class="k">else</span>
+</span><span class="line">        <span class="k">begin</span>
+</span><span class="line">            <span class="n">ts</span> <span class="o">:=</span> <span class="s">&#39;&#39;</span><span class="o">;</span>
+</span><span class="line">            <span class="n">j</span> <span class="o">:=</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class="line">            <span class="k">while</span> <span class="p">(</span><span class="k">not</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span> <span class="n">i</span><span class="o">,</span> <span class="n">j</span> <span class="p">]</span> <span class="k">in</span> <span class="p">[</span> <span class="s">&#39;0&#39;</span> <span class="o">..</span> <span class="s">&#39;9&#39;</span> <span class="p">]))</span> <span class="k">do</span>
+</span><span class="line">                <span class="nb">inc</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line">            <span class="n">ts</span> <span class="o">:=</span> <span class="nb">copy</span><span class="p">(</span><span class="n">a</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line">            <span class="nb">delete</span><span class="p">(</span><span class="n">a</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line">            <span class="n">t</span> <span class="o">:=</span> <span class="nb">length</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line">            <span class="n">c</span> <span class="o">:=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class="line">            <span class="k">for</span> <span class="n">j</span> <span class="o">:=</span> <span class="mi">1</span> <span class="k">to</span> <span class="nb">length</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span> <span class="k">do</span>
+</span><span class="line">                <span class="n">c</span> <span class="o">:=</span> <span class="n">c</span> <span class="o">+</span> <span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">ts</span><span class="p">[</span> <span class="n">j</span> <span class="p">])</span> <span class="o">-</span> <span class="mi">64</span><span class="p">)</span> <span class="o">*</span> <span class="mi">26</span> <span class="o">**</span> <span class="p">(</span><span class="n">t</span> <span class="o">-</span> <span class="n">j</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line">            <span class="nb">str</span><span class="p">(</span><span class="n">c</span><span class="o">,</span> <span class="n">ts</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line">            <span class="n">ans</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">:=</span> <span class="s">&#39;R&#39;</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span> <span class="n">i</span> <span class="p">]</span> <span class="o">+</span> <span class="s">&#39;C&#39;</span> <span class="o">+</span> <span class="n">ts</span><span class="o">;</span>
+</span><span class="line">        <span class="k">end</span><span class="o">;</span>
+</span><span class="line">    <span class="k">end</span><span class="o">;</span>
+</span><span class="line"><span class="k">end</span><span class="o">;</span>
+</span><span class="line">
+</span><span class="line"><span class="k">procedure</span> <span class="nf">outit</span><span class="o">;</span>
+</span><span class="line"><span class="k">var</span> <span class="n">i</span> <span class="o">:</span> <span class="kt">longint</span><span class="o">;</span>
+</span><span class="line"><span class="k">begin</span>
+</span><span class="line">    <span class="k">for</span> <span class="n">i</span> <span class="o">:=</span> <span class="mi">1</span> <span class="k">to</span> <span class="n">n</span> <span class="k">do</span>
+</span><span class="line">        <span class="nb">writeln</span><span class="p">(</span><span class="n">ans</span><span class="p">[</span> <span class="n">i</span> <span class="p">])</span><span class="o">;</span>
+</span><span class="line"><span class="k">end</span><span class="o">;</span>
+</span><span class="line">
+</span><span class="line"><span class="k">begin</span>
+</span><span class="line">    <span class="n">init</span><span class="o">;</span>
+</span><span class="line">    <span class="n">main</span><span class="o">;</span>
+</span><span class="line">    <span class="n">outit</span><span class="o">;</span>
+</span><span class="line"><span class="k">end</span><span class="o">.</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 </div>
 
 

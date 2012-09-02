@@ -191,11 +191,95 @@ MathJax.Hub.Config({
 
 <h3 id="c">程序（C++）</h3>
 
-<p>File d:/hyy0591-blog.github.com/source/downloads/code/cf_1A.cpp could not be found</p>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (cf_1A.cpp)</span> <a href="/downloads/code/cf_1A.cpp">下载</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+</pre></td><td class="code"><pre><code class="cpp"><span class="line"><span class="cp">#include &lt;iostream&gt;</span>
+</span><span class="line"><span class="cp">#include &lt;cmath&gt;</span>
+</span><span class="line"><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span><span class="line">
+</span><span class="line"><span class="kt">int</span> <span class="n">main</span><span class="p">()</span>
+</span><span class="line"><span class="p">{</span>
+</span><span class="line">    <span class="kt">long</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">a</span><span class="p">;</span>
+</span><span class="line">    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">m</span> <span class="o">&gt;&gt;</span> <span class="n">a</span><span class="p">;</span>
+</span><span class="line">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">static_cast</span> <span class="o">&lt;</span><span class="kt">long</span> <span class="kt">long</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">ceil</span><span class="p">(</span><span class="n">n</span> <span class="o">/</span> <span class="k">static_cast</span> <span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="o">*</span> <span class="n">ceil</span><span class="p">(</span><span class="n">m</span> <span class="o">/</span> <span class="k">static_cast</span> <span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">a</span><span class="p">)))</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</span><span class="line">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <h3 id="pascal">程序（Pascal）</h3>
 
-<p>File d:/hyy0591-blog.github.com/source/downloads/code/cf_1A.pas could not be found</p>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span> (cf_1A.pas)</span> <a href="/downloads/code/cf_1A.pas">下载</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+</pre></td><td class="code"><pre><code class="pas"><span class="line"><span class="k">program</span> <span class="n">cf_1A</span><span class="o">;</span>
+</span><span class="line"><span class="k">var</span> <span class="n">n</span><span class="o">,</span> <span class="n">m</span><span class="o">,</span> <span class="n">a</span><span class="o">,</span> <span class="n">ans</span> <span class="o">:</span> <span class="kt">int64</span><span class="o">;</span>
+</span><span class="line">
+</span><span class="line"><span class="k">procedure</span> <span class="nf">init</span><span class="o">;</span>
+</span><span class="line"><span class="k">begin</span>
+</span><span class="line">    <span class="nb">readln</span><span class="p">(</span><span class="n">n</span><span class="o">,</span> <span class="n">m</span><span class="o">,</span> <span class="n">a</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line"><span class="k">end</span><span class="o">;</span>
+</span><span class="line">
+</span><span class="line"><span class="k">procedure</span> <span class="nf">main</span><span class="o">;</span>
+</span><span class="line"><span class="k">begin</span>
+</span><span class="line">    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="k">mod</span> <span class="n">a</span> <span class="o">&lt;&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
+</span><span class="line">        <span class="n">ans</span> <span class="o">:=</span> <span class="n">n</span> <span class="k">div</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class="line">    <span class="k">else</span>
+</span><span class="line">        <span class="n">ans</span> <span class="o">:=</span> <span class="n">n</span> <span class="k">div</span> <span class="n">a</span><span class="o">;</span>
+</span><span class="line">    <span class="k">if</span> <span class="p">(</span><span class="n">m</span> <span class="k">mod</span> <span class="n">a</span> <span class="o">&lt;&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
+</span><span class="line">        <span class="n">ans</span> <span class="o">:=</span> <span class="n">ans</span> <span class="o">*</span> <span class="p">(</span><span class="n">m</span> <span class="k">div</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span><span class="line">    <span class="k">else</span>
+</span><span class="line">        <span class="n">ans</span> <span class="o">:=</span> <span class="n">ans</span> <span class="o">*</span> <span class="p">(</span><span class="n">m</span> <span class="k">div</span> <span class="n">a</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line"><span class="k">end</span><span class="o">;</span>
+</span><span class="line">
+</span><span class="line"><span class="k">procedure</span> <span class="nf">outit</span><span class="o">;</span>
+</span><span class="line"><span class="k">begin</span>
+</span><span class="line">    <span class="nb">writeln</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span><span class="o">;</span>
+</span><span class="line"><span class="k">end</span><span class="o">;</span>
+</span><span class="line">
+</span><span class="line"><span class="k">begin</span>
+</span><span class="line">    <span class="n">init</span><span class="o">;</span>
+</span><span class="line">    <span class="n">main</span><span class="o">;</span>
+</span><span class="line">    <span class="n">outit</span><span class="o">;</span>
+</span><span class="line"><span class="k">end</span><span class="o">.</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 </div>
 
 
