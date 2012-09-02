@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[hyy0591's Blog]]></title>
+  <link href="http://hyy0591-blog.github.com/atom.xml" rel="self"/>
+  <link href="http://hyy0591-blog.github.com/"/>
+  <updated>2012-09-02T12:42:11+08:00</updated>
+  <id>http://hyy0591-blog.github.com/</id>
+  <author>
+    <name><![CDATA[hyy0591]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Codeforces 1B - Spreadsheets]]></title>
+    <link href="http://hyy0591-blog.github.com/2012/08/31/codeforces-1b-spreadsheets/"/>
+    <updated>2012-08-31T19:07:00+08:00</updated>
+    <id>http://hyy0591-blog.github.com/2012/08/31/codeforces-1b-spreadsheets</id>
+    <content type="html"><![CDATA[<h2 id="centerb-center"><center>B. 电子表格<center /></center></h2>
+
+<center>时间限制：10 sec</center>
+<center>内存限制：64 MB</center>
+<center>输入：标准输入</center>
+<center>输出：标准输出</center>
+
+<h3 id="section">问题描述</h3>
+<p>　　在流行的电子表格系统中（例如，在Excel中）以下的列编号法被采用。第一列编号A，第二列——编号为B，以此类推，直到26列被编号为Z。然后用两个字母编号：27列编号AA，28列——AB，52列标记为AZ。在ZZ之后用三个字母编号，以此类推。</p>
+
+<p>　　每列的编号是从1开始的整数。单元格的名称是列和行编号的连接。例如BC23是在55列，23行的单元格的名称。</p>
+
+<p>　　有时候另一种编号法也被采用：RXCY，其中X和Y是整数，分别表示行和列。例如，R23C55是之前的例子表示的单元格的坐标。</p>
+
+<p>　　你的工作是写一个程序来读取给出的坐标，根据另一种表示法，生成每一项的编号。</p>
+
+<h3 id="section-1">输入格式</h3>
+
+<p>　　输入的第一行包含一个整数n（$ 1 \leq n \leq 10^5 $），表示输入文件包含的坐标数。接下来的n行内，每行包含一个坐标。所有坐标保证正确，且没有大于10^6的单元格行或列坐标。</p>
+
+<h3 id="section-2">输出格式</h3>
+
+<p>　　输出n行，每行应包含一个另一种表示法的单元格坐标。</p>
+
+<h3 id="section-3">样例</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">输入　　　　　　</th>
+      <th style="text-align: left">输出　　　　　　</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">2<br />R23C55<br />BC23</td>
+      <td style="text-align: left">BC23<br />R23C55</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="section-4">原题地址</h3>
+
+<p>　　<a href="http://www.codeforces.com/problemset/problem/1/B">Codeforces - 1B - Spreadsheets</a></p>
+
+<!-- more -->
+
+<hr />
+
+<h3 id="c">程序（C++）</h3>
+
+<p>File d:/hyy0591-blog.github.com/source/downloads/code/cf_1B.cpp could not be found</p>
+
+<h3 id="pascal">程序（Pascal）</h3>
+
+<p>File d:/hyy0591-blog.github.com/source/downloads/code/cf_1B.pas could not be found</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Codeforces 1A - Theatre Square]]></title>
+    <link href="http://hyy0591-blog.github.com/2012/08/29/codeforces-1a-theatre-square/"/>
+    <updated>2012-08-29T14:40:00+08:00</updated>
+    <id>http://hyy0591-blog.github.com/2012/08/29/codeforces-1a-theatre-square</id>
+    <content type="html"><![CDATA[<h2 id="centera-center"><center>A. 剧院广场<center /></center></h2>
+
+<center>时间限制：2 sec</center>
+<center>内存限制：64 MB</center>
+<center>输入：标准输入</center>
+<center>输出：标准输出</center>
+
+<h3 id="section">问题描述</h3>
+
+<p>　　Berland首都的剧院广场是一个大小为$ n \times m $的长方形。在城市的纪念日之际，人们决定用花岗岩地砖来铺广场。每块地砖的大小为$ a \times a $。</p>
+
+<p>　　请问最少需要多少地砖来铺广场？覆盖面的面积可大于剧院广场，但广场必须被覆盖。它不允许破坏石板。石板的侧面应平行于广场的侧面。</p>
+
+<h3 id="section-1">输入格式</h3>
+
+<p>　　输入的第一行包含了三个正整数：n，m和a（$ 1 \leq n,m,a \leq 10^9 $）。</p>
+
+<h3 id="section-2">输出格式</h3>
+
+<p>　　输出需要的石板数。</p>
+
+<h3 id="section-3">样例</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">输入　　　　</th>
+      <th style="text-align: left">输出　　　　</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">6 6 4</td>
+      <td style="text-align: left">4</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="section-4">原题地址</h3>
+
+<p>　　<a href="http://www.codeforces.com/problemset/problem/1/A">Codeforces - 1A - Theatre Square</a></p>
+
+<!-- more -->
+
+<hr />
+
+<h3 id="c">程序（C++）</h3>
+
+<p>File d:/hyy0591-blog.github.com/source/downloads/code/cf_1A.cpp could not be found</p>
+
+<h3 id="pascal">程序（Pascal）</h3>
+
+<p>File d:/hyy0591-blog.github.com/source/downloads/code/cf_1A.pas could not be found</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown 测试]]></title>
+    <link href="http://hyy0591-blog.github.com/2012/07/22/markdown-test/"/>
+    <updated>2012-07-22T22:38:00+08:00</updated>
+    <id>http://hyy0591-blog.github.com/2012/07/22/markdown-test</id>
+    <content type="html"><![CDATA[<h2 id="section">段落</h2>
+
+<p>这是一个段落。它有两个句子。</p>
+
+<p>这是另一个段落。它也有 
+两个句子。</p>
+
+<h2 id="section-1">换行</h2>
+
+<p>在文本中输入的换行会从最终生成的结果中删除，浏览器会根据可用空间自动换行。如果想强（换行）<br />
+迫换行，可以在行尾插入至少两个空格。</p>
+
+<h2 id="section-2">强调</h2>
+
+<p><em>强调</em></p>
+
+<p><strong>加重强调</strong></p>
+
+<p><strong><em>特别强调</em></strong></p>
+
+<h2 id="section-3">代码</h2>
+
+<p>夹杂着<code>一些代码</code>的文字内容</p>
+
+<p>代码块：</p>
+
+<pre><code>#!/usr/bin/env python
+print ("Hello, world!")
+</code></pre>
+
+<!-- more -->
+
+<p>代码高亮：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Hello World!</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="pascal"><span class="line"><span class="k">program</span> <span class="n">helloworld</span><span class="o">;</span>
+</span><span class="line"><span class="k">begin</span>
+</span><span class="line">    <span class="nb">writeln</span><span class="p">(</span><span class="s">&#39;Hello World!&#39;</span><span class="p">)</span>
+</span><span class="line"><span class="k">end</span><span class="o">.</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-4">列表</h2>
+
+<h3 id="section-5">无序列表</h3>
+<ul>
+  <li>无序列表中的一项
+    <ul>
+      <li>一个子项，以一个制表符或四个空格缩进</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="section-6">有序列表</h3>
+<ol>
+  <li>有序列表中的一项</li>
+  <li>有序列表中的另一个项</li>
+</ol>
+
+<h2 id="section-7">标题</h2>
+
+<h1 id="section-8">一级标题</h1>
+
+<h2 id="section-9">二级标题</h2>
+
+<h3 id="section-10">三级标题</h3>
+
+<h4 id="section-11">四级标题</h4>
+
+<p>……</p>
+
+<h2 id="section-12">引用</h2>
+
+<blockquote>
+  <p>这一整段的内容都会作为一个HTML的引用元素。
+引用元素是会自动优化排版的（reflowable，可回流）。
+你可以任意地将引用的内容包含进来，然后所有这些都会
+被解析成为单独一个引用元素。</p>
+</blockquote>
+
+<p>引用可以嵌套：</p>
+
+<blockquote>
+  <p>第一个引用</p>
+
+  <blockquote>
+    <p>一个嵌套的引用</p>
+  </blockquote>
+
+  <p>外层引用的第二行</p>
+</blockquote>
+
+<h2 id="section-13">公式</h2>
+
+<script type="math/tex; mode=display">% &lt;![CDATA[
+
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+ %]]&gt;</script>
+
+<h2 id="section-14">链接</h2>
+
+<h3 id="section-15">普通链接</h3>
+<p><a href="http://www.apple.com/">Apple</a></p>
+
+<p><a href="http://www.stackoverflow.com/">StackOverflow</a></p>
+
+<h3 id="section-16">脚注链接：</h3>
+<p><a href="https://www.google.com/" title="Google">Google</a></p>
+
+<p><a href="http://zh.wikipedia.org/" title="Wikipedia">Wikipedia</a></p>
+
+<h2 id="section-17">水平分割线</h2>
+
+<h3 id="section-18">方式1：</h3>
+<hr />
+
+<h3 id="section-19">方式2：</h3>
+<hr />
+
+<h3 id="section-20">方式3：</h3>
+<hr />
+
+<h3 id="section-21">方式4：</h3>
+<hr />
+
+<h3 id="section-22">方式5：</h3>
+<hr />
+
+<h2 id="section-23">表格</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">First Header</th>
+      <th style="text-align: center">Second Header</th>
+      <th style="text-align: right">Third Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Content Cell</td>
+      <td style="text-align: center">Content Cell</td>
+      <td style="text-align: right">Content Cell</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Content Cell</td>
+      <td style="text-align: center">Content Cell</td>
+      <td style="text-align: right">Content Cell</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="section-24">图片</h2>
+<p><img src="http://hyy0591-blog.github.com/posts/article/2012/07/22/kagamine-rin-len.jpg" alt="鏡音リン&amp;鏡音レン" title="鏡音リン&amp;鏡音レン" /></p>
+
+<p><img src="http://hyy0591-blog.github.com/posts/article/2012/07/22/kagamine-rin-len.jpg" title="鏡音リン&amp;鏡音レン" alt="鏡音リン&amp;鏡音レン" /></p>
+
+<h1 id="centerendcenter"><center>END</center></h1>
+
+]]></content>
+  </entry>
+  
+</feed>

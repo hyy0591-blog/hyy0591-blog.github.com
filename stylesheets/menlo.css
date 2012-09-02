@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Menlo-hyy0591';
+    src: url('/fonts/menlo/menlo-bolditalic.eot');
+    src: url('/fonts/menlo/menlo-bolditalic.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/menlo/menlo-bolditalic.woff') format('woff'),
+         url('/fonts/menlo/menlo-bolditalic.ttf') format('truetype'),
+         url('/fonts/menlo/menlo-bolditalic.svg#menlobold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Menlo-hyy0591';
+    src: url('/fonts/menlo/menlo-bold.eot');
+    src: url('/fonts/menlo/menlo-bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/menlo/menlo-bold.woff') format('woff'),
+         url('/fonts/menlo/menlo-bold.ttf') format('truetype'),
+         url('/fonts/menlo/menlo-bold.svg#menlobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Menlo-hyy0591';
+    src: url('/fonts/menlo/menlo-italic.eot');
+    src: url('/fonts/menlo/menlo-italic.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/menlo/menlo-italic.woff') format('woff'),
+         url('/fonts/menlo/menlo-italic.ttf') format('truetype'),
+         url('/fonts/menlo/menlo-italic.svg#menloitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Menlo-hyy0591';
+    src: url('/fonts/menlo/menlo-regular.eot');
+    src: url('/fonts/menlo/menlo-regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/menlo/menlo-regular.woff') format('woff'),
+         url('/fonts/menlo/menlo-regular.ttf') format('truetype'),
+         url('/fonts/menlo/menlo-regular.svg#menloregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
