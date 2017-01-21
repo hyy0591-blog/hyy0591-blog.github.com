@@ -1,0 +1,11 @@
+@font-face {
+font-family:中行书1;
+Src:
+url(font1.woff)  format("woff");
+}
+
+@font-face {
+font-family:中行书2;
+Src:
+url(font2.woff)  format("woff");
+}

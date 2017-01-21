@@ -1,0 +1,803 @@
+/*leo move arrow icon from left to right side 把箭頭移到右側*/
+.ui-accordion-icons .ui-accordion-header a { padding-left: 0.3em; } 
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: 100%; margin-left: -30px; top: 50%; margin-top: -8px; }
+
+/*Leo add 子項目內容背景圖設定*/
+
+
+/* reset */
+body, div, ul, li, h1, h2, h3, h4, h5, h6, pre, form, input, textarea, p, th, td {
+	margin:0;
+	padding:0;
+	
+} 
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img {
+	border:0;
+}
+ul {
+	list-style:none;
+}
+a, a:hover, a:active, a:focus{
+	text-decoration:none;
+	border:none;
+	outline:none;
+	/*color:#ffd4e6;*/
+	/***color:#67412A;***/
+	}
+:focus {
+    outline: 0;
+}
+/* reset */
+
+html { 
+overflow-x: hidden; overflow-y: auto; 
+}
+
+
+/*Leo add 背景顏色*/
+body {
+	
+		background: url(images/bg.png);
+	/*font-family:Georgia, "Times New Roman", Times, serif;*/
+	
+}	
+
+/*
+.ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {style: clear }
+*/
+
+
+
+/*預載圖片*/
+#preload-01 { background: url(images/buttons_on.png) no-repeat -9999px -9999px; }
+/*
+#preload-01 { background: url(images/bg_tl.gif) no-repeat -9999px -9999px; }
+#preload-02 { background: url(images/bg_tm.gif) no-repeat -9999px -9999px; }
+#preload-03 { background: url(images/bg_tr.gif) no-repeat -9999px -9999px; }
+*/
+
+/*====主頁外框 Start====*/
+/*框內的高度及寬度都會變化*/
+
+#MainContent{
+		max-width:320px;
+		margin: 0 auto;
+		background: url(images/bg.png);
+}
+
+#outter{
+/*外框*/
+ 
+}
+
+.outter-main-tl{
+/*左上框*/
+	font-size:15%; /*fix IE6*/
+}
+.outter-main-tm{
+/*上框*/
+	font-size:15%; /*fix IE6*/
+
+/***
+  height: 71px;
+	background: center top url(images/outter_main_top.png) no-repeat;
+	background-size: 100% 71px;
+***/
+	
+}
+.outter-main-tr{
+/*右上框*/
+	font-size:15%; /*fix IE6*/
+}
+.outter-main-bl{
+/*左下框*/
+
+	font-size:15%; /*fix IE6*/
+
+/***
+	margin-top: -30px;
+	width: 100%;
+	height:64px;
+	background: center bottom url(images/outter_main_bottom.png) no-repeat;
+	background-size: 100% 64px;	
+***/	
+	
+}
+.outter-main-bm{
+/*下框*/
+	font-size:15%; /*fix IE6*/
+	
+}
+.outter-main-br{
+/*右下框*/
+	font-size:15%; /*fix IE6*/
+}
+.outter-main-ml{
+/*左框*/
+	width:auto;
+}
+.outter-main-mr{
+/*右框 内容*/
+	width:auto;
+}
+
+.outter-main-mm{
+/*中框*/
+}
+
+/*====主頁外框 End====*/
+
+
+/*====主頁內框 Start====*/
+/*
+注意主頁內框的上框及下框要留足夠的高度給上標及下標題文字顯示
+height:40px 以上比較保險;
+
+*/
+#inner{
+	
+	position:relative; 
+	
+}
+
+.inner-main-tl{
+/*左上框*/
+}
+.inner-main-tm{
+/*上框*/
+
+
+}
+
+/***
+#inner   { display: table; width:100%;}
+.inner-main-mr { display: table-header-group; }
+.inner-main-br { display: table-footer-group;}
+***/
+/*.inner-main-tr  { display: table-footer-group; }*/
+
+#inner   { display: table; width:100%;}
+.inner-main-tr { display: table-header-group;}
+.inner-main-mr { display: table-footer-group; }
+.inner-main-br { display: table-header-group;}
+
+.inner-main-tr{
+	
+/*右上框*/
+}
+.inner-main-bl{
+/*左下框*/
+}
+.inner-main-bm{
+/*下框*/
+}
+.inner-main-br{
+/*右下框*/
+}
+.inner-main-ml{
+/*左框*/
+position:relative;
+}
+.inner-main-mr{
+/*右框 内容*/
+
+}
+
+
+#frame1_1{
+
+	background: center top url(images/frame_top.png) no-repeat;	
+	position:absolute;
+	background-size: 100% 45px;
+	height: 45px;
+	width: 100%;
+	top: 0px;
+	z-index: 101;
+	
+
+}
+
+#frame1_2{
+
+}
+#frame1_3{
+
+}
+
+
+#frame2_1{
+  
+  
+	position:absolute;
+	background: center center url(images/frame_middle.png) repeat-y;	
+	background-size: 100% 3px;
+	height:100%;
+	width: 100%;
+	top: 0px;
+	z-index: 100;
+
+
+}
+
+#frame2_2{
+
+}
+#frame2_3{
+
+}
+
+
+
+#frame3_1{
+  
+	background: center bottom url(images/frame_bottom.png) no-repeat;	
+	background-size: 100% 71px;
+	
+	height:71px;
+	position:absolute;
+	height:100%;
+	width: 100%;
+	z-index: 102;  
+	/***min-height: 105px;***/
+
+}
+
+#frame3_2{
+}
+#frame3_3{
+}
+
+
+
+.inner-main-mm{
+	
+/*中框*/
+  
+	padding: 15px 15px 40px 15px;
+  text-align:center;
+  vertical-align:middle;
+}
+
+/*====主頁內框 End====*/
+.inner-main-mm img{
+	vertical-align : middle;
+	/***display:block;***/
+/*	width:100%;
+	height:100%; */
+margin:0 auto;
+
+}
+
+#img_videobutton{
+	width: 50px;
+	height: 50px;
+	position:absolute;
+	background:url(images/icons/video.png) center center no-repeat;
+	background-size:contain;
+	z-index: 999;
+	top: -50px;
+	cursor:pointer;
+}
+
+
+/*====主頁內框 End====*/
+
+
+
+/*====Main-title Start====*/
+/*框內的高度及寬度都會變化*/
+
+#main-title{
+/*外框*/
+	
+ }
+
+
+#maintitlehtml span{ 
+
+}
+
+.main-title-tm{
+
+}
+
+
+
+.main-title-tl{
+}
+.main-title-tr{
+
+}
+
+.main-title-bm{
+  
+/***
+  min-height:43px;
+	background: center top url(images/maintitle_bottom.png);
+	background-size: 100% 43px;  
+***/	
+}
+.main-title-bl{
+}
+.main-title-br{
+
+}
+
+
+.main-title-ml{
+/*左框*/
+	background: center bottom url(images/maintitle_bottom.png) no-repeat;
+	background-size: 100% 105px;
+	width:100%;
+
+	z-index: 100;
+}
+.main-title-mr{
+/*右框 内容*/
+	background: center center url(images/maintitle_middle.png) repeat-y;
+	background-size: 100% 100%;
+	width:100%;
+  z-index: 1;
+}
+
+
+.main-title-mm{
+/*上框*/
+
+  min-height: 280px;  
+	background: center top url(images/maintitle_top.png) no-repeat;
+	background-size: 100% 175px;
+	width:100%;
+	z-index: 100;  
+
+	text-align: center;
+	
+	width:auto;
+	line-height:1.2;
+	text-align:center;
+	padding:10px 20px 10px 20px;	
+	
+	/*padding: 0px 10px 10px 10px;*/
+
+	font-size:15%; /*fix IE6*/
+}
+
+#maintitlehtml{
+	
+	/*text-shadow:0px 0px 0 rgb(108,108,108), 1px 1px 0 rgb(22,22,22),2px 2px 1px rgba(0,0,0,0.05),2px 2px 1px rgba(0,0,0,0.5),0px 0px 1px rgba(0,0,0,.2); 
+	
+   -webkit-text-stroke: 1px black;
+	
+	*/
+    /***display: inline-block;***/
+
+  padding-top: 175px;
+  padding-bottom: 105px;
+	
+	color: #FFFFFF;
+	/*font-size:23px;*/
+}
+
+
+/*====main-title End====*/
+
+
+/*====Sub-title Start====*/
+/*框內的高度及寬度都會變化*/
+
+#sub-title{ 
+/*外框*/
+ 
+}
+
+.sub-title-tl{
+/*左上框*/
+	font-size:15%; /*fix IE6*/
+}
+.sub-title-tm{
+/*上框*/
+	font-size:15%; /*fix IE6*/
+}
+.sub-title-tr{
+/*右上框*/
+	font-size:15%; /*fix IE6*/
+}
+.sub-title-bl{
+/*左下框*/
+	font-size:15%; /*fix IE6*/
+}
+.sub-title-bm{
+/*下框*/
+	font-size:15%; /*fix IE6*/
+
+	min-height: 20px;
+	width:100%;
+	background: center top url(images/subtitle_bottom.png);
+	background-size: 100% 20px;
+	
+}
+.sub-title-br{
+/*右下框*/
+	font-size:15%; /*fix IE6*/
+}
+.sub-title-mr{
+/*左框*/
+	font-size:15%; /*fix IE6*/
+}
+.sub-title-ml{
+/*右框 内容*/
+	font-size:15%; /*fix IE6*/
+	width:100%;
+	background: center center url(images/subtitle_middle.png) repeat-y;
+	background-size: 100% 1px;	
+}
+
+.sub-title-mm{
+/*中框*/
+	
+	
+	min-height:17px;
+	width:100%;
+	background: center center url(images/date2.png) no-repeat;
+	background-size: 100% 17px;
+	
+	text-align:center;
+/*	line-height:1; */
+
+ /* WebKit (Safari/Chrome) Only */
+ /* -webkit-text-stroke: 1px #474747; */
+  
+  /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+  
+  
+
+}
+
+#subtitlehtml{
+	
+  padding:10px 45px 10px 45px;
+ 
+  
+  color: #FFFFFF;
+}
+
+#img_decoration3{
+ 
+
+}
+
+/*====sub-title End====*/
+
+
+/*====按鈕外框 Start====*/
+
+#accordion{
+  
+ background: #000;  
+}
+
+.button{
+/*最外框
+	background:url(images/btn_bg2.png) left 0px no-repeat;
+	*/
+	
+	
+}
+
+.button *{
+/*最外框
+	background:url(images/btn_bg2.png) left 0px no-repeat;
+	*/
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+    outline-color: transparent;
+}
+
+
+
+/*框內的高度及寬度都會變化*/
+.button-tl{
+/*左上框*/
+}
+.button-tm{
+/*上框*/
+}
+.button-tr{
+/*右上框*/
+}
+.button-bl{
+/*左下框*/
+}
+.button-bm{
+/*下框*/
+}
+.button-br{
+/*右下框*/
+}
+.button-ml{
+/*左框*/
+
+
+}
+.ui-state-hover .button-ml{ 
+}
+
+.ui-state-active .button-ml{ 
+}
+
+
+.ui-state-hover .button-mr{ 
+}
+
+.ui-state-active .button-mr{ 
+}
+
+
+.button-mr{
+/*右框 内容*/
+	width: 100%;
+	height:60px;
+	background: center center url(images/button2.png) no-repeat;
+	background-size: 100% 60px;
+
+	margin-top: -1px;
+	margin-bottom: 3px;
+}
+
+.ui-state-active .button-mr{ 
+	background: center center url(images/button_on2.png) no-repeat;
+	background-size: 100% 60px;
+}
+
+.ui-state-hover .button-mr{ 
+	background: center center url(images/button_on2.png) no-repeat;
+	background-size: 100% 60px;
+}
+
+
+/***
+
+#button1 .button-mr{
+
+	width:auto;
+	background-image:url(images/bg_buttons.png); background-position:right 0px; background-repeat: no-repeat; 	
+	background-size: 100% 921px;
+}
+#button2 .button-mr{
+
+	width:auto;
+	background-image:url(images/bg_buttons.png); background-position:right -92px; background-repeat: no-repeat; 	
+	background-size: 100% 921px;
+}
+#button3 .button-mr{
+
+	width:auto;
+	background-image:url(images/bg_buttons.png); background-position:right -184px; background-repeat: no-repeat; 	
+	background-size: 100% 921px;
+}
+#button4 .button-mr{
+
+	width:auto;
+	background-image:url(images/bg_buttons.png); background-position:right -277px; background-repeat: no-repeat; 	
+	background-size: 100% 921px;
+}
+#button5 .button-mr{
+
+	width:auto;
+	background-image:url(images/bg_buttons.png); background-position:right -369px; background-repeat: no-repeat; 	
+	background-size: 100% 921px;
+}
+#button6 .button-mr{
+
+	width:auto;
+	background-image:url(images/bg_buttons.png); background-position:right -461px; background-repeat: no-repeat; 	
+	background-size: 100% 921px;
+}
+#button7 .button-mr{
+
+	width:auto;
+	background-image:url(images/bg_buttons.png); background-position:right -553px; background-repeat: no-repeat; 	
+	background-size: 100% 921px;
+}
+#button8 .button-mr{
+
+	width:auto;
+	background-image:url(images/bg_buttons.png); background-position:right -645px; background-repeat: no-repeat; 	
+	background-size: 100% 921px;
+}
+#button9 .button-mr{
+
+	width:auto;
+	background-image:url(images/bg_buttons.png); background-position:right -737px; background-repeat: no-repeat; 	
+	background-size: 100% 921px;
+}
+#button10 .button-mr{
+
+	width:auto;
+	background-image:url(images/bg_buttons.png); background-position:right -829px; background-repeat: no-repeat; 	
+	background-size: 100% 921px;
+}
+
+.ui-state-hover #button1 .button-mr,.ui-state-hover #button2 .button-mr,.ui-state-hover #button3 .button-mr,.ui-state-hover #button4 .button-mr,.ui-state-hover #button5 .button-mr,.ui-state-hover #button6 .button-mr,.ui-state-hover #button7 .button-mr,.ui-state-hover #button8 .button-mr,.ui-state-hover #button9 .button-mr,.ui-state-hover #button10 .button-mr{ background-image:url(images/bg_buttons_on.png); }
+
+.ui-state-active #button1 .button-mr,.ui-state-active #button2 .button-mr,.ui-state-active #button3 .button-mr,.ui-state-active #button4 .button-mr,.ui-state-active #button5 .button-mr,.ui-state-active #button6 .button-mr,.ui-state-active #button7 .button-mr{  }
+
+
+***/
+
+
+
+
+
+
+.button-mm{
+/*中框 */
+	height:60px;
+	/***background: center center url(images/bg_buttons.png) no-repeat;***/
+	text-align:center;
+  
+/***border: 1px solid red;***/
+}
+
+
+
+
+.ui-state-hover .button-mm, .ui-state-active .button-mm { 
+	
+	/***background: center center url(images/bg_buttons_on.png) no-repeat;***/
+}
+
+.button-mm a{
+	width:100%
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	
+	}
+
+.iconimage{
+	
+	width: 32px;
+	margin-left: -30px; 
+	margin-top: 0px; 
+ vertical-align: middle;
+}
+.button-title{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+	color: #FFFFFF;
+	font-size: 24px;
+/*	font-weight:bold; */ 
+	font-weight: normal;
+	line-height: 60px;
+	padding-left: 0px;
+	margin-top: 2px; 
+}
+
+
+
+.ui-state-active .button-title { 
+	color: #FFFFFF;
+}
+.ui-state-hover .button-title { 
+	color: #FFFFFF;
+}
+
+/*====按鈕外框 End====*/
+
+/*====內容外框 Start====*/
+
+.detail {
+/*最外框*/
+
+
+}
+
+
+/*框內的高度及寬度都會變化*/
+.detail-tl{
+/*左上框*/
+  min-height: 119px;
+	background: center bottom url(images/content_top.png) no-repeat;
+	background-size: 100% 119px;
+  width: 100%;		
+}
+.detail-tm{
+/*上框*/
+}
+.detail-tr{
+/*右上框*/
+}
+.detail-bl{
+/*左下框*/
+  
+  margin-top: -20px;
+	background: center top url(images/content_bottom.png) no-repeat;
+	background-size: 100% 46px;
+	min-height: 46px;
+  width: 100%;	
+
+}
+.detail-bm{
+/*下框*/
+}
+.detail-br{
+/*右下框*/
+}
+.detail-ml{
+/*左框*/
+
+	width:auto;
+	background: center center url(images/content_middle.png) repeat-y;  
+	background-size: 100% 100%;
+  width: 100%;	
+
+}
+.detail-mr{
+/*右框 内容*/
+
+
+
+
+}
+
+/***
+#detail1 .detail-mr{ background-color: #e3b74b; }
+#detail2 .detail-mr{ background-color: #48cfae; }
+#detail3 .detail-mr{ background-color: #ea434b; }
+#detail4 .detail-mr{ background-color: #8dc153; }
+#detail5 .detail-mr{ background-color: #3fa2c5; }
+#detail6 .detail-mr{ background-color: #eb6950; }
+#detail7 .detail-mr{ background-color: #079065; }
+***/
+
+.detail-mm p{
+/*中框 */
+}
+
+.detail-mm {
+/*中框 */
+	/*color:#ffd4e6;*/
+	
+	width:auto;
+	/*color:#B00100; */
+	color: #000000;
+	
+	padding: 10px 30px 10px 30px;
+	line-height:1.3;
+	/*letter-spacing:1px;*/
+	height:100%;
+	
+}
+
+
+
+
+
+
+#footer{
+	height:62px;
+	background: center center url(images/copyright_bg.png) no-repeat;
+	background-size: 100% 100%;
+	font-size:15%; /*fix IE6*/
+	
+	}
+
+#copyright{
+
+}
+
+
+#copyright-text{
+	padding-top: 40px;
+	font-size:13px;
+	color:#F1E289;
+	text-align:center;
+}
+
+/*====內容外框 End====*/
+
