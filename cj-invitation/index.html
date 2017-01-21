@@ -2012,8 +2012,10 @@ var TO_GLAT = function(lat){return lat-0.0060;};
       // 注意：所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入"公众号设置"的"功能设置"里填写"JS接口安全域名"。 
       // 如果发现在 Android 不能分享自定义内容，请到官网下载最新的包覆盖安装，Android 自定义分享接口需升级至 6.0.2.58 版本及以上。
       // 完整 JS-SDK 文档地址：http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+	var url = encodeURIComponent(location.href.split('#')[0]);
+    alert('url is ' + url);
       wx.config({
-        debug: true, 
+        debug: false, 
         appId: 'wx9181aeea7c257d48',
         timestamp: 1485011754,
         nonceStr: 'jye0n6mpstk7ppk',
