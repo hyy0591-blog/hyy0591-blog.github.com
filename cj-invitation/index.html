@@ -2010,25 +2010,18 @@ var TO_GLAT = function(lat){return lat-0.0060;};
 	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script>
 var url = encodeURIComponent(location.href.split('#')[0]);
-var url = encodeURIComponent(location.href.split('#')[0]);
 $.ajax({
         type: "GET",
         url: "//ouroi.life/cj-invitation/wx/getparam.php",
         data: {url: url},
         dataType: "json",
         success: function(data) {
-            var configData = $.parseJSON(data.d);
-            alert(configData.appId);
-            alert(configData.timestamp);
-            alert(configData.nonceStr);
-            alert(configData.signature);
-            alert(configData.rawString);
             wx.config({
                 debug: true,
-                appId: configData.appid, // 必填，公众号的唯一标识
-                timestamp: configData.timestamp, // 必填，生成签名的时间戳
-                nonceStr: configData.noncestr, // 必填，生成签名的随机串
-                signature: configData.signature, // 必填，签名，见附录1
+                appId: data.appId, // 必填，公众号的唯一标识
+                timestamp: data.timestamp, // 必填，生成签名的时间戳
+                nonceStr: data.nonceStr, // 必填，生成签名的随机串
+                signature: data.signature, // 必填，签名，见附录1
                 jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo']
             });
             wx.ready(function () {
