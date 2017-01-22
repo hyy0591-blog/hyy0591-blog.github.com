@@ -2010,18 +2010,19 @@ var TO_GLAT = function(lat){return lat-0.0060;};
 	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script>
 var url = encodeURIComponent(location.href.split('#')[0]);
+var url = encodeURIComponent(location.href.split('#')[0]);
 $.ajax({
-        type: "POST",
+        type: "GET",
         url: "//ouroi.life/cj-invitation/wx/getparam.php",
-        data: "{'curUrl': '" + url + "'}",
-        contentType: "application/json; charset=utf-8",
+        data: {url: url},
         dataType: "json",
         success: function(data) {
             var configData = $.parseJSON(data.d);
-            alert(configData.appid);
+            alert(configData.appId);
             alert(configData.timestamp);
-            alert(configData.noncestr);
+            alert(configData.nonceStr);
             alert(configData.signature);
+            alert(configData.rawString);
             wx.config({
                 debug: true,
                 appId: configData.appid, // 必填，公众号的唯一标识
